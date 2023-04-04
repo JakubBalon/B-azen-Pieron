@@ -1,0 +1,281 @@
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+  }
+
+/* Nav */
+.nav-items{
+	display: none;
+}
+
+nav ul {
+	padding-top: 50px;
+	position: absolute;
+	height: 300px;
+	width: 250px;
+	top: -300px;
+	
+	list-style: none;    
+	background-color: rgb(255, 255, 255);
+	transition: transform .3s;
+	z-index: 1;
+}
+
+nav a {
+	display: block;
+	padding: 10px 30px;
+	color: #333;
+	text-decoration: none;    
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+.burger {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	padding: 10px 20px;
+	font-size: 36px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #000000;
+	transition: transform .3s;
+	z-index: 1;
+}
+
+.active {
+	transform: translateY(300px)
+}
+
+.hide {
+	display: none;
+}
+
+
+/* Header */
+
+header{
+    height: 300px;
+    display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom:20px;
+	
+
+}
+
+.header-div{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #9c0505;
+	width: 230px;
+	text-align: center;
+	border-radius: 10px;
+	
+}
+
+/* Main */
+
+main{
+	top: 400px;
+	height: 1350px;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #e60808;
+	
+
+}
+
+.tekst-area-main{
+	height: 650px;
+	width: 300px;
+	text-align: center;
+	padding: 10px;
+	background-color: #08b11e;
+	border-radius: 10px;
+}
+
+.products-div{
+	width: 1000px;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.product{
+	width: 300px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #000000;
+	color: #fafafa;
+	border-radius: 10px;
+	
+}
+
+/* Footer */
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: static;
+	bottom: 0px;
+	
+	width: 100%;
+	height: 60px;
+	
+	background-color: #0003a8;
+
+}
+.footer-item{
+	width: 150px;
+	height: 60px;
+	background-color: #c7b300;
+	border-radius: 10px;
+}
+
+@media (min-width: 768px){									/*/////////////////////////////////////////////////////////////////////////////////////////////
+
+	.wrapper{
+		width: 70%;
+	}
+
+/* Nav */
+nav ul {
+	display:none;
+}
+
+
+
+
+.burger {
+	display: none;
+}
+
+.active {
+	display: none;
+}
+
+ nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+	top: 0px;
+	z-index: 2;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(218, 204, 129, 0.712);
+	text-align: center;
+
+}
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+	text-decoration: none;
+    width: 70%;
+    }
+
+
+
+	
+.nav-items a {
+        
+		padding:  3px;
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: rgb(3, 10, 5);
+		cursor: pointer;
+		transition: color 0.4s;
+	}
+    .nav-items a:hover {
+		color: rgb(255, 255, 255);
+	} 
+
+
+/* Header */
+header{
+	height: 350px;
+}
+
+.header-div{
+	width: 300px;
+	background-color: #410a8a;
+}
+
+
+
+/* Main */
+main{
+	top: 500px;
+}
+
+.tekst-area-main{
+	width: 450px;
+	height: 450px;
+}
+}
+@media (min-width: 960px)		{		/*/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* Header */
+
+.header-div{
+	width: 400px;
+	background-color: #08b11e;
+}
+
+
+/* Main */
+
+.tekst-area-main{
+	width: 650px;
+}
+}
+@media (min-width: 1024px){				/*/////////////////////////////////////////////////////////////////////////////////////////////
+/* Header */
+.header-div{
+	width: 500px;
+}
+
+/* Main */
+
+.tekst-area-main{
+	width: 700px;
+	height: 350px;
+}
+}
+
